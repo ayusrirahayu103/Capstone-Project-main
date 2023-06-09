@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - WeaDay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#CCD5AE]">
+    <div class="flex">
+        <div class="w-[151px] h-[961px] px-[23px] py-[55px]">
+            <div class="bg-[#CCD5AE] w-[105px] h-[852px] drop-shadow-lg rounded-lg flex flex-col gap-y-[164px] items-center pt-[32px]">
+              <img src="../assets/Logo.png" alt="" class="w-[65%]">
+                <div class="flex flex-col gap-y-[28px]">
+                    <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-zinc-200 active:bg-neutral-100">
+                        <a href="../index.html"><img src="../assets/tabel.svg" alt="" class="w-[40px]"></a>
+                    </button>
+                    <button class="bg-neutral-100 w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+                        <a href="../pages/analytics.html"><img src="../assets/diagram.svg" alt="" class="w-[40px]"></a>
+                    </button>
+                    <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+                        <a href="../pages/monthly.html"><img src="../assets/Kalender.svg" alt="" class="w-[40px]"></a>
+                    </button>
+                      <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+                        <a href="../pages/recommendation.html"><img src="../assets/solar_health-linear (Active).svg" alt="" class="w-[40px]"></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="main-content" class="flex flex-col flex-1 w-contain h-screen pt-[60px] text-xl px-[28px] py-[48px] gap-y-[40px]">
+            <div class="flex justify-between items-center w-full h-[62px]">
+                <div class="">
+                  <h2 class="">Your Location :</h2>
+                  <h1 class="font-semibold">Bandung, Jawabarat</h1>
+                </div>
+                <div class="flex items-center">
+                  <span class="absolute pl-[12px]"><img src="/assets/search.svg" alt=""></span>
+                  <input type="text" class="w-[376px] h-[44px] text-base rounded-lg px-[16px] py-[12px] text-end" id="InputSearchCountry" placeholder="Search Your Location">
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-col gap-y-[40px]">
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl font-semibold">Hourly Forecast</h1>
+                        <div class="flex space-x-[28px] pt-[15px]">
+                            <button class="bg-neutral-100 flex w-[126px] h-[56px] rounded-md font-medium items-center gap-x-[16px] px-[12px] py-[8px]">
+                                <img src="/assets/weathericon/Property 1=Default.svg" alt="">
+                                <h1 class="text-sm">Mon 1</h1>
+                            </button>
+                            <button class="bg-neutral-100 flex w-[126px] h-[56px] rounded-md font-medium items-center gap-x-[16px] px-[12px] py-[8px]">
+                                <img src="/assets/weathericon/Property 1=Default.svg" alt="">
+                                <h1 class="text-sm">Tue 2</h1>
+                            </button>
+                            <button class="bg-neutral-100 flex w-[126px] h-[56px] rounded-md font-medium items-center gap-x-[16px] px-[12px] py-[8px]">
+                                <img src="/assets/weathericon/Property 1=Default.svg" alt="">
+                                <h1 class="text-sm">Wed 3</h1>
+                            </button>
+                            <button class="bg-neutral-100 flex w-[126px] h-[56px] rounded-md font-medium items-center gap-x-[16px] px-[12px] py-[8px]">
+                                <img src="/assets/weathericon/Property 1=Default.svg" alt="">
+                                <h1 class="text-sm">Thu 4</h1>
+                            </button>
+                            <button class="bg-neutral-100 flex w-[126px] h-[56px] rounded-md font-medium items-center gap-x-[16px] px-[12px] py-[8px]">
+                                <img src="/assets/weathericon/Property 1=Default.svg" alt="">
+                                <h1 class="text-sm">Fri  5</h1>
+                            </button>
+                            <button class="bg-neutral-100 flex w-[126px] h-[56px] rounded-md font-medium items-center gap-x-[16px] px-[12px] py-[8px]">
+                                <img src="/assets/weathericon/Property 1=Default.svg" alt="">
+                                <h1 class="text-sm">Sat 6</h1>
+                            </button>
+                            <button class="bg-neutral-100 flex w-[126px] h-[56px] rounded-md font-medium items-center gap-x-[16px] px-[12px] py-[8px]">
+                                <img src="/assets/weathericon/Property 1=Default.svg" alt="">
+                                <h1 class="text-sm">Sun 7</h1>
+                            </button>
+                            <button class="bg-neutral-100 w-contain h-contain py-[10px] px-[14px] rounded-md"><img src="/assets/navigasi.svg" alt=""></button>
+                        </div>
+                        <div id="table-hourly-forecast" class="bg-neutral-100 w-contain h-[126px] mt-[10px] rounded-md">
+                            <div class="flex gap-x-[30px] px-[47px] py-[32px] border-b-2 border-neutral-400">
+                                <div class="flex space-x-[20px] m-[8px] items-center">
+                                    <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[60px]">
+                                    <span class="">
+                                        <h1 class="text-xl font-medium">Today</h1>
+                                        <p class="text-xl font-bold">24°C</p>
+                                    </span>
+                                </div>
+                                <span class="flex flex-col justify-center mr-[40px]">
+                                    <h1 class="text-base font-semibold">Daytime : Partly Sunny</h1>
+                                    <h1 class="text-base font-semibold">Nighttime : Partly Cloudy</h1>
+                                </span>
+                                <div class="flex gap-x-[30px] pt-[10px] ml-[30px]">
+                                    <div class="bg-[#CCD5AE] flex w-cover h-[56px] px-[8px] py-[12px] items-center space-x-[12px] rounded-md">
+                                        <img src="../assets/iconset/Humidity=Humidity(Dark).svg" alt="" class="w-[32px] bg-neutral-100 rounded-md">
+                                        <span>
+                                            <h1 class="text-sm font-semibold">Humidity</h1>
+                                            <p class="text-sm font-light">20%</p>
+                                        </span>
+                                    </div>
+                                    <div class="bg-[#CCD5AE] flex w-cover h-[56px] px-[8px] py-[12px] items-center space-x-[12px] rounded-md">
+                                        <img src="../assets/iconset/UV=UV(Dark).svg" alt="" class="w-[32px] bg-neutral-100 rounded-md">
+                                        <span>
+                                            <h1 class="text-sm font-semibold">UV Index</h1>
+                                            <p class="text-sm font-ligt">2</p>
+                                        </span>
+                                    </div>
+                                    <div class="bg-[#CCD5AE] flex w-cover h-[56px] px-[8px] py-[12px] items-center space-x-[12px] rounded-md">
+                                        <img src="../assets/iconset/Wind=Wind(Dark).svg" alt="" class="w-[32px] bg-neutral-100 rounded-md">
+                                        <span>
+                                            <h1 class="text-sm font-semibold">Wind</h1>
+                                            <p class="text-sm font-ligt">2 mph</p>
+                                        </span>
+                                        <img src="../assets/bi_cursor-fill.png" alt="" class="w-[14px]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-[40px] w-contain h-[85px] bg-[#ffffff] p-[24px] mt-[5px] rounded">
+                        <div class="flex items-center">
+                            <div class="flex gap-x-[30px]">
+                                <button class="bg-[#CCD5AE] active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Temp=Temp48.svg" alt="" class="w-[32px]">
+                                    <p class="text-base">24°C</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Precipitation=Precipitation(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">Rainy</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/UV=UV(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Humidity=Humidity(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Wind=Wind(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <h1 class="text-2xl font-bold ml-[500px]">1 am</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-[40px] w-contain h-[85px] bg-[#ffffff] p-[24px] rounded">
+                        <div class="flex items-center">
+                            <div class="flex gap-x-[30px]">
+                                <button class="bg-[#CCD5AE] active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Temp=Temp48.svg" alt="" class="w-[32px]">
+                                    <p class="text-base">24°C</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Precipitation=Precipitation(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">Rainy</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/UV=UV(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Humidity=Humidity(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Wind=Wind(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <h1 class="text-2xl font-bold ml-[500px]">2 am</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-[40px] w-contain h-[85px] bg-[#ffffff] p-[24px] rounded">
+                        <div class="flex items-center">
+                            <div class="flex gap-x-[30px]">
+                                <button class="bg-[#CCD5AE] active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Temp=Temp48.svg" alt="" class="w-[32px]">
+                                    <p class="text-base">24°C</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Precipitation=Precipitation(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">Rainy</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/UV=UV(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Humidity=Humidity(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Wind=Wind(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <h1 class="text-2xl font-bold ml-[500px]">3 am</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-[4px] w-contain h-[85px] bg-[#ffffff] p-[24px] rounded">
+                        <div class="flex items-center">
+                            <div class="flex gap-x-[30px]">
+                                <button class="bg-[#CCD5AE] active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Temp=Temp48.svg" alt="" class="w-[32px]">
+                                    <p class="text-base">24°C</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Precipitation=Precipitation(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">Rainy</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/UV=UV(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Humidity=Humidity(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <button class="active:bg-[#CCD5AE] hover:bg-[#CCD5AE] flex space-x-[4px] w-contain h-contain px-[8px] py-[4px] rounded-md items-center">
+                                    <img src="../assets/iconset/Wind=Wind(Dark).svg" alt="" class="w-[32px]">
+                                    <p class="text-base">0</p>
+                                </button>
+                                <h1 class="text-2xl font-bold ml-[500px]">4 am</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

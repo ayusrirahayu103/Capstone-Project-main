@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Prediction - WeaDay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#CCD5AE]">
+    <div class="flex">
+        <div class="w-[151px] h-[961px] px-[23px] py-[55px]">
+            <div class="bg-[#CCD5AE] w-[105px] h-[852px] drop-shadow-lg rounded-lg flex flex-col gap-y-[164px] items-center pt-[32px]">
+              <img src="../assets/Logo.png" alt="" class="w-[65%]">
+                <div class="flex flex-col gap-y-[28px]">
+                    <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-zinc-200 active:bg-neutral-100">
+                        <a href="../index.html"><img src="../assets/tabel.svg" alt="" class="w-[40px]"></a>
+                    </button>
+                    <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+                        <a href="../pages/analytics.html"><img src="../assets/diagram.svg" alt="" class="w-[40px]"></a>
+                    </button>
+                    <button class="bg-neutral-100 w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+                        <a href="../pages/monthly.html"><img src="../assets/Kalender.svg" alt="" class="w-[40px]"></a>
+                    </button>
+                      <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+                        <a href="../pages/recommendation.html"><img src="../assets/solar_health-linear (Active).svg" alt="" class="w-[40px]"></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col flex-1 w-contain h-screen pt-[60px] text-xl px-[24px] py-[48px]">
+            <div class="flex justify-between items-center w-full h-[62px]">
+                <div class="">
+                  <h2 class="">Your Location :</h2>
+                  <h1 class="font-semibold">Bandung, Jawabarat</h1>
+                </div>
+                <div class="flex items-center">
+                  <span class="absolute pl-[12px]"><img src="/assets/search.svg" alt=""></span>
+                  <input type="text" class="w-[376px] h-[44px] text-base rounded-lg px-[16px] py-[12px] text-end" id="InputSearchCountry" placeholder="Search Your Location">
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-[20px] mt-[40px]">
+                <h1 class="font-semibold text-2xl">Monthly Forecast</h1>
+                <div class="flex space-x-[28px]">
+                    <button class="bg-neutral-100 w-[128px] h-[56px] rounded-md font-medium">June</button>
+                    <button class="bg-neutral-100 w-[128px] h-[56px] rounded-md font-medium">July</button>
+                    <button class="bg-neutral-100 w-[128px] h-[56px] rounded-md font-medium">August</button>
+                    <button class="bg-neutral-100 w-[128px] h-[56px] rounded-md font-medium">September</button>
+                    <button class="bg-neutral-100 w-[128px] h-[56px] rounded-md font-medium">October</button>
+                    <button class="bg-neutral-100 w-[128px] h-[56px] rounded-md font-medium">November</button>
+                    <button class="bg-neutral-100 w-[128px] h-[56px] rounded-md font-medium">December</button>
+                    <button class="bg-neutral-100 w-contain h-contain py-[10px] px-[14px] rounded-md"><img src="../assets/navigasi.svg" alt=""></button>
+                </div>
+                <div class="bg-neutral-100 p-[32px] rounded-md">
+                    <table>
+                        <thead>
+                            <tr class="items-start">
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody class="gap-x-[5px] pt-[12px]">
+                            <tr id="Week1"> 
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="Week2"> 
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="Week3"> 
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="Week4"> 
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="Week5"> 
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bg-[#CCD5AE] flex items-center w-[127px] h-[68px] rounded space-x-[8px] p-[10px] m-[12px]">
+                                        <img src="../assets/weathericon/Property 1=Default.svg" alt="" class="w-[52px] h-[52px]">
+                                        <span class="flex-col">
+                                            <p class="text-base">Sunny</p>
+                                            <h1 class="text-base font-bold">24°C</h1>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeaDay - Weather Day</title>
+  
+  <!--Styling-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!--Font Style-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#CCD5AE]">
+  <div class="flex">
+    <!--Sidebar-->
+    <div class="w-[151px] h-[961px] px-[23px] py-[55px]">
+      <div class="bg-[#CCD5AE] w-[105px] h-[852px] drop-shadow-lg rounded-lg flex flex-col gap-y-[164px] items-center pt-[32px]">
+        <img src="./assets/Logo.png" alt="" class="w-[65%]">
+        <div class="flex flex-col gap-y-[28px]">
+            <button class="bg-neutral-100 w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+              <a href="./index.html"><img src="./assets/tabel.svg" alt="" class="w-[40px]"></a>
+            </button>
+            <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+              <a href="./pages/analytics.html"><img src="./assets/diagram.svg" alt="" class="w-[40px]"></a>
+            </button>
+            <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400 active:bg-neutral-100">
+              <a href="./pages/monthly.html"><img src="./assets/Kalender.svg" alt="" class="w-[40px]"></a>
+            </button>
+            <button class="w-[78px] h-[78px] rounded-lg flex justify-center items-center hover:bg-neutral-400">
+              <a href="./pages/recommendation.html"><img src="/assets/solar_health-linear (Active).svg" alt="" class="w-[40px]"></a>
+            </button>
+        </div>
+      </div>
+    </div> 
+    <!--Main Content-->
+    <div id="main-content" class="flex flex-col flex-1 w-[825px] h-screen pt-[60px] text-xl px-[28px] py-[48px]">
+      <div class="flex justify-between items-center w-full h-[62px]">
+        <div class="">
+          <h2 class="">Your Location :</h2>
+          <h1 class="font-semibold">Bandung, Jawabarat</h1>
+        </div>
+        <div class="flex items-center">
+          <span class="absolute pl-[12px]"><img src="/assets/search.svg" alt=""></span>
+          <input type="text" class="w-[376px] h-[40px] text-base rounded-lg px-[16px] py-[12px] text-end" id="InputSearchCountry" placeholder="Search Your Location">
+        </div>
+      </div>
+      <div class="flex items-center mt-[40px] space-x-4">
+        <div class="w-[60%] h-[360px] bg-[url('/assets/img1.svg')] bg-cover rounded-lg">
+          <div class="flex justify-between w-contain h-[80px] pt-[28px] px-[24px]">
+            <h1 class="text-2xl font-bold">Weather Day</h1>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-4xl font-bold">24°C</h1>
+              <p class="text-base font-medium">Partly Cloudy</p>
+            </div>  
+          </div>
+          <div class="flex mt-[180px] justify-center gap-x-[12px]">
+            <div class="flex flex-col justify-center items-center w-[120px] h-[72px] bg-[#CCD5AE] rounded-lg p-[16px] gap-y-[4px] gap-x-[12px]">
+              <p class="text-sm font-medium">Humadity</p>
+              <h1 class="text-xl font-bold">80%</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center w-[120px] h-[72px] bg-[#CCD5AE] rounded-lg p-[16px] gap-y-[4px] gap-x-[12px]">
+                <p class="text-sm font-medium">Pressure</p>
+                <h1 class="text-xl font-bold">1200mb</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center w-[120px] h-[72px] bg-[#CCD5AE] rounded-lg p-[16px] gap-y-[4px] gap-x-[12px]">
+              <p class="text-sm font-medium">Visibility</p>
+              <h1 class="text-xl font-bold">8.4 Km</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center w-[40%] h-[360px] bg-[#ffffff] rounded-lg px-[24px]">
+          <div class="flex items-center ml-[12px] pt-[20px] gap-x-[38px]">
+            <h2 class="font-bold text-md">Weather Forecast</h2>
+            <img src="./assets/navigasi.svg" alt="" class="">
+          </div>
+          <div class="flex flex-row items-center pt-[20px] gap-y-[20px] mr-[30px]">
+            <img src="./assets/day.svg" alt="" class="w-[70px] m-[10px] pr-[10px]">
+            <span>
+              <h1 class="font-semibold text-base">Day</h1>
+              <p class="text-xs pt-[5px]">Langit akan sebagian</p>
+              <p class="text-xs pt-[2px]">berawan.</p>
+              <p class="text-xs pt-[10px]">Suhu akan turun 20°C</p>
+            </span>
+          </div>
+          <div class="flex flex-row items-center pt-[20px] gap-y-[20px] mr-[10px]">
+            <img src="./assets/night.svg" alt="" class="w-[60px] m-[10px] pr-[10px]">
+            <span>
+              <h1 class="font-semibold text-base">Night</h1>
+              <p class="text-xs pt-[5px]">Hujan ringan diperkirakan</p>
+              <p class="text-xs pt-[2px]">turun malam ini.</p>
+              <p class="text-xs pt-[10px]">Suhu akan naik 20°C</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-y-[12px] w-contain h-[350px] bg-[#ffffff] p-[24px] mt-[40px] rounded-lg">
+        <h1 class="font-semibold">Weather Graph</h1>
+        <img src="/assets/Grafik.svg" class="w-auto">
+      </div>
+    </div>
+    <div class="bg-[#E9EDC9] flex-2 w-[350px] h-[961px]">
+      <div id="WeatherPrediction" class="flex flex-col items-center py-[20px]">
+        <h1 class="flex flex-col py-[20px] font-bold text-2xl">Weather Prediction</h1>
+        <div class="flex flex-col gap-y-[16px]">
+          <div class="flex flex-row w-[255px] h-[80px] bg-[#ffffff] rounded-lg gap-x-[20px] items-center p-[16px]">
+            <img src="./assets/bright.svg" alt="" class="w-[48px]">
+            <span>
+              <p>Tue, 7 June 2023</p>
+              <label class="font-semibold" for="">Sunny</label>
+            </span>
+          </div>
+          <div class="flex flex-row w-[255px] h-[80px] bg-[#ffffff] rounded-lg gap-x-[20px] items-center p-[16px]">
+            <img src="./assets/cloud.svg" alt="" class="w-[48px]">
+            <span>
+              <p>Wed, 8 June 2023</p>
+              <label class="font-semibold" for="">Cloudy</label>
+            </span>
+          </div>
+          <div class="flex flex-row w-[255px] h-[80px] bg-[#ffffff] rounded-lg gap-x-[20px] items-center p-[16px]">
+            <img src="./assets/rain.svg" alt="" class="w-[48px]">
+            <span>
+              <p>Thu, 9 June 2023</p>
+              <label class="font-semibold" for="">Rainy</label>
+            </span>
+          </div>
+          <div class="flex flex-row w-[255px] h-[80px] bg-[#ffffff] rounded-lg gap-x-[20px] items-center p-[16px]">
+            <img src="./assets/bright.svg" alt="" class="w-[48px]">
+            <span>
+              <p>Fri, 10 June 2023</p>
+              <label class="font-semibold" for="">Sunny</label>
+            </span>
+          </div>
+          <div class="flex flex-row w-[255px] h-[80px] bg-[#ffffff] rounded-lg gap-x-[20px] items-center p-[16px]">
+            <img src="./assets/bright.svg" alt="" class="w-[48px]">
+            <span>
+              <p>Sat, 11 June 2023</p>
+              <label class="font-semibold" for="">Sunny</label>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="rekomendasi" class="flex flex-col items-center py-[20px]">
+        <h1 class="flex flex-col py-[10px] font-bold text-2xl justify-between-center">Recomendations</h1>
+        <div class="flex flex-wrap mt-[15px]">
+        <div class="flex flex-row w-[150px] h-[60px] bg-[#ffffff] rounded-lg gap-x-[10px] items-center p-[7px] mt-[10px] ml-[15px]">
+          <img src="./assets/umbrella.svg" alt="" class="bg-[#ffffff] w-[45px] h-[45px] rounded-md drop-shadow-xl">
+          <span>
+            <label class="font-semibold text-sm" for="">Umbrella</label>
+            <p class="text-sm">No need</p>
+          </span>
+        </div>
+        <div class="flex flex-row w-[150px] h-[60px] bg-[#ffffff] rounded-lg gap-x-[10px] items-center p-[7px] mt-[10px] ml-[15px]">
+          <img src="./assets/outdoor.svg" alt="" class="bg-[#ffffff] w-[45px] h-[45px] rounded-md drop-shadow-xl">
+          <span>
+            <label class="font-semibold text-sm" for="">Outdoor</label>
+            <p class="text-sm">Enough</p>
+          </span>
+        </div>
+        <div class="flex flex-row w-[150px] h-[60px] bg-[#ffffff] rounded-lg gap-x-[10px] items-center p-[7px] mt-[10px] ml-[15px]">
+          <img src="./assets/clothes.svg" alt="" class="bg-[#ffffff] w-[45px] h-[45px] rounded-md drop-shadow-xl">
+          <span>
+            <label class="font-semibold text-sm" for="">Clothes</label>
+            <p class="text-sm">Shorts</p>
+          </span>
+        </div>
+        <div class="flex flex-row w-[150px] h-[60px] bg-[#ffffff] rounded-lg gap-x-[10px] items-center p-[7px] mt-[10px] ml-[15px]">
+          <img src="./assets/uv.svg" alt="" class="bg-[#ffffff] w-[45px] h-[45px] rounded-md drop-shadow-xl">
+          <span>
+            <label class="font-semibold text-sm" for="">UV Index</label>
+            <p class="text-sm">High</p>
+          </span>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
